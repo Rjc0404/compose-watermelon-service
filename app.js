@@ -19,7 +19,6 @@ dayjs.extend(weekday);
 dayjs.locale(locale);
 
 const rankTipList = require('./rank.json');
-const { timeStamp } = require('console');
 // 昵称列表
 const nicknameList = [
   '桃桃奶冻',
@@ -478,7 +477,7 @@ function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-app.listen(8000, () => {
+httpsServer.listen(8000, () => {
   console.log(`服务器正在监听端口 8000`);
 });
 
